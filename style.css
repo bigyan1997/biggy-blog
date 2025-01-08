@@ -75,7 +75,7 @@ a{
 .nav-brand img{
     width: auto;
     max-width: 200px;
-    height: 100px;
+    height: 80px;
     transition: transform 0.3s ease; 
 }
 .nav-brand img:hover {
@@ -91,6 +91,10 @@ a{
     font-size: 18px;
     margin: 12px;
     color: var(--dark);
+    background-color: transparent; 
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+
 }
 
 .nav-link.active {
@@ -99,7 +103,10 @@ a{
 }
 
 .nav-link:hover{
-    color: var(--primary-color);
+    color: wheat;
+    background-color: #2C3E50;
+    border-radius: 0px 10px 0px 10px;
+    
 }
 
 .search-box{
@@ -124,6 +131,53 @@ a{
     outline: none;
 }
 
+/* Social Icon Styles */
+.social-icons {
+    background-color: transparent;
+    display: inline-block;
+    transition: transform 1.1s ease, color 0.3s ease; 
+}
+
+.social-icons:hover {
+    transform: rotate(360deg) scale(1.8);
+    background-color: transparent; 
+}
+
+/* Instagram */
+.insta {
+    color: #E4405F; 
+}
+
+.insta:hover {
+    color: #C13584; 
+}
+
+/* Facebook */
+.facebook {
+    color: #1877F2; 
+}
+
+.facebook:hover {
+    color: #1877F2; 
+}
+
+/* Twitter */
+.twitter {
+    color: #1DA1F2; 
+}
+
+.twitter:hover {
+    color: #1A91DA; 
+}
+
+/* Dribbble */
+.dribbble {
+    color: #EA4C89; 
+}
+
+.dribbble:hover {
+    color: #D73B6E; 
+}
 
 
 /* ----Navigation Menu Styling---- */
@@ -134,6 +188,15 @@ a{
     .navbar{
         flex-direction: column;
     }
+    .nav-link{
+        font-size: 16px;
+        margin: 10px;
+        color: var(--dark);
+        background-color: transparent; /* Default background */
+        padding: 10px;
+        border-radius: 0px 10px 0px 10px;
+    }
+    
 }
 
 @media(max-width:574px){
@@ -151,5 +214,6 @@ a{
     .search-box{
         border-right: none;
     }
+    
     
 }

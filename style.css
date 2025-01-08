@@ -42,8 +42,8 @@ a{
 .text-primary{
     color: var(--primary-color);
 }
-.bg-light{
-    background-color: var(--light);
+.bg-dark{
+    background-color: var(--dark);
 }
 
 .container{
@@ -90,23 +90,24 @@ a{
 .nav-link{
     font-size: 18px;
     margin: 12px;
-    color: var(--dark);
-    background-color: transparent; 
+    color: var(--light);
     padding: 10px;
-    transition: background-color 0.3s, color 0.3s;
-
+    background-color: transparent;
+    border: 2px solid transparent; 
+    border-radius: 0px 10px 0px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .nav-link.active {
     background-color: var(--secondary-color);
     color: var(--light);
+    
 }
 
 .nav-link:hover{
-    color: wheat;
-    background-color: #2C3E50;
+    color: rgb(12, 12, 12);
+    background-color: #dbdcdd;
     border-radius: 0px 10px 0px 10px;
-    
 }
 
 .search-box{
@@ -191,7 +192,7 @@ a{
     .nav-link{
         font-size: 16px;
         margin: 10px;
-        color: var(--dark);
+        color: var(--light);
         background-color: transparent; /* Default background */
         padding: 10px;
         border-radius: 0px 10px 0px 10px;
